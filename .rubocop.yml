@@ -8,6 +8,8 @@ Layout/EmptyLinesAroundBlockBody:
   Enabled: false
 Metrics/MethodLength:
   Enabled: false
+Metrics/BlockLength:
+  Enabled: false
 Metrics/CyclomaticComplexity:
   Enabled: false
 Metrics/PerceivedComplexity:
