@@ -13,3 +13,6 @@
 # IDE
 /.idea
 .idea/workspace.xml
+
+# Gem
+*.gem

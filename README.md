@@ -1,5 +1,11 @@
 # RailsParseHead
 
+[![Gem Version](https://badge.fury.io/rb/rails_parse_head.svg)](https://badge.fury.io/rb/rails_parse_head)
+[![Maintainability](https://api.codeclimate.com/v1/badges/afba4f764f278035b1c1/maintainability)](https://codeclimate.com/github/BorisBresciani/rails_parse_head/maintainability)
+[![Build Status](https://travis-ci.org/BorisBresciani/rails_parse_head.svg?branch=master)](https://travis-ci.org/BorisBresciani/rails_parse_head)
+[![security](https://hakiri.io/github/BorisBresciani/rails_parse_head/master.svg)](https://hakiri.io/github/BorisBresciani/rails_parse_head/master)
+![Gem](https://img.shields.io/gem/dt/rails_parse_head)
+ 
 RailsParseHead is a simple Ruby library for parsing head element information from a website. 
 
 Learn more about the protocol at: 
