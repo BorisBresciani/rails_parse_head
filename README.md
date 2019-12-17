@@ -1,8 +1,10 @@
 # RailsParseHead
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/rails_parse_head`. To experiment with that code, run `bin/console` for an interactive prompt.
+RailsParseHead is a simple Ruby library for parsing head element information from a website. 
 
-TODO: Delete this and the text above, and describe your gem
+Learn more about the protocol at: 
+- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/head
+- https://github.com/joshbuchea/HEAD
 
 ## Installation
 
@@ -22,7 +24,28 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+### Parsing an URL
+
+```ruby
+rph = RailsParseHead.fetch('https://github.com')
+rph.title # => "The world’s leading software development platform · GitHub"
+rph.metas # => [{:charset=>"utf-8"}, {:name=>"viewport", :content=>"width=device-width"}]
+rph.links # => [{:rel=>"dns-prefetch", :href=>"https://github.githubassets.com"}, {:rel=>"dns-prefetch", :href=>"https://avatars0.githubusercontent.com"}]
+```
+
+### Custom header request
+```ruby
+rph = RailsParseHead.fetch('https://github.com', headers: { accept: 'application/json' })
+```
+
+See: https://github.com/httprb/http/wiki/Headers
+
+### Parsing a HTML string
+
+```ruby
+rph = RailsParseHead.parse("<meta charset='utf-8'>")
+rph.metas # => [{:charset=>"utf-8"}]
+```
 
 ## Development
 
@@ -32,7 +55,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/rails_parse_head. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/BorisBresciani/rails_parse_head. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 ## License
 
