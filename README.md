@@ -33,7 +33,7 @@ rph.metas # => [{:charset=>"utf-8"}, {:name=>"viewport", :content=>"width=device
 rph.links # => [{:rel=>"dns-prefetch", :href=>"https://github.githubassets.com"}, {:rel=>"dns-prefetch", :href=>"https://avatars0.githubusercontent.com"}]
 ```
 
-##### Custom header request
+#### Custom header request
 ```ruby
 rph = RailsParseHead.fetch('https://github.com', headers: { accept: 'application/json' })
 ```
