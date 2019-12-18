@@ -8,7 +8,7 @@
  
 RailsParseHead is a simple Ruby library for parsing head element information from a website. 
 
-Learn more about the protocol at: 
+Learn more about the head element at: 
 - https://developer.mozilla.org/en-US/docs/Web/HTML/Element/head
 - https://github.com/joshbuchea/HEAD
 
