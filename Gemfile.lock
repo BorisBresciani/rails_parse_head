@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    rails_parse_head (0.1.0)
+    rails_parse_head (0.2.0)
       http (~> 4.2)
       nokogiri (~> 1.10)
 
