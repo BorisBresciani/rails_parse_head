@@ -16,3 +16,6 @@
 
 # Gem
 *.gem
+
+# coverralls
+.coveralls.yml
