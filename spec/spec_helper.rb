@@ -1,6 +1,12 @@
 # frozen_string_literal: true
 
 require 'bundler/setup'
+require 'simplecov'
+require 'coveralls'
+
+SimpleCov.start
+Coveralls.wear!
+
 require 'rails_parse_head'
 
 RSpec.configure do |config|
