@@ -3,8 +3,16 @@
 require 'bundler/setup'
 require 'rails_parse_head'
 require 'coveralls'
+require 'simplecov'
 
+SimpleCov.start :rails do
+  add_filter do
+    'spec/'
+    'lib/'
+  end
+end
 Coveralls.wear!
+
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure
