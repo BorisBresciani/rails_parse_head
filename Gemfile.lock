@@ -2,7 +2,7 @@ PATH
   remote: .
   specs:
     rails_parse_head (0.2.1)
-      http (~> 4.2)
+      http (~> 4.4)
       nokogiri (~> 1.10)
 
 GEM
@@ -24,19 +24,19 @@ GEM
     ffi-compiler (1.0.1)
       ffi (>= 1.0.0)
       rake
-    http (4.3.0)
+    http (4.4.0)
       addressable (~> 2.3)
       http-cookie (~> 1.0)
       http-form_data (~> 2.2)
       http-parser (~> 1.2.0)
     http-cookie (1.0.3)
       domain_name (~> 0.5)
-    http-form_data (2.2.0)
+    http-form_data (2.3.0)
     http-parser (1.2.1)
       ffi-compiler (>= 1.0, < 2.0)
     json (2.3.0)
     mini_portile2 (2.4.0)
-    nokogiri (1.10.8)
+    nokogiri (1.10.9)
       mini_portile2 (~> 2.4.0)
     public_suffix (4.0.3)
     rake (10.5.0)
@@ -46,7 +46,7 @@ GEM
       rspec-mocks (~> 3.9.0)
     rspec-core (3.9.1)
       rspec-support (~> 3.9.1)
-    rspec-expectations (3.9.0)
+    rspec-expectations (3.9.1)
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.9.0)
     rspec-mocks (3.9.1)

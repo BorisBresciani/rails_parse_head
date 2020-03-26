@@ -34,6 +34,6 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'rspec', '~> 3.0'
   spec.add_development_dependency 'simplecov', '~> 0.16'
 
-  spec.add_dependency 'http', '~> 4.2'
+  spec.add_dependency 'http', '~> 4.4'
   spec.add_dependency 'nokogiri', '~> 1.10'
 end
